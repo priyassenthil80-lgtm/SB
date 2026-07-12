@@ -250,6 +250,127 @@ font-size:34px;
 
 }
 
+  /* SERVICES */
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.service-card{
+background:#1d1d1d;
+padding:35px;
+border-radius:15px;
+text-align:center;
+transition:.4s;
+}
+
+.service-card:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 30px rgba(212,175,55,.3);
+}
+
+.icon{
+font-size:45px;
+margin-bottom:15px;
+}
+
+/* GALLERY */
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:260px;
+object-fit:cover;
+border-radius:15px;
+transition:.4s;
+cursor:pointer;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+/* TESTIMONIALS */
+
+.testimonials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:25px;
+}
+
+.testimonial{
+background:#1d1d1d;
+padding:30px;
+border-radius:15px;
+}
+
+.testimonial p{
+margin:20px 0;
+color:#ccc;
+}
+
+/* CONTACT */
+
+.contact-box{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+}
+
+.contact-box input,
+.contact-box textarea{
+width:100%;
+padding:15px;
+margin-bottom:20px;
+background:#1d1d1d;
+border:none;
+border-radius:10px;
+color:white;
+}
+
+.contact-box button{
+background:#d4af37;
+padding:15px;
+border:none;
+width:100%;
+font-size:18px;
+border-radius:10px;
+cursor:pointer;
+font-weight:600;
+}
+
+.contact-details p{
+margin:18px 0;
+color:#ccc;
+}
+
+footer{
+background:#000;
+padding:60px 20px;
+text-align:center;
+margin-top:80px;
+}
+
+footer h2{
+color:#d4af37;
+margin-bottom:15px;
+}
+
+@media(max-width:900px){
+
+.contact-box{
+grid-template-columns:1fr;
+}
+
+}
+
 </style>
 
 </head>
@@ -367,7 +488,308 @@ projects—we transform every memory into timeless art.
 
 </section>
 
-<!-- PART 2 WILL START FROM HERE -->
+  <!-- ================= SERVICES ================= -->
+
+<section id="services">
+
+<h2 class="title">Our Services</h2>
+
+<div class="services">
+
+<div class="service-card">
+<div class="icon">📸</div>
+<h3>Wedding Photography</h3>
+<p>Traditional, candid and cinematic wedding photography.</p>
+</div>
+
+<div class="service-card">
+<div class="icon">🎥</div>
+<h3>Cinematic Videography</h3>
+<p>4K cinematic wedding films with creative storytelling.</p>
+</div>
+
+<div class="service-card">
+<div class="icon">👶</div>
+<h3>Baby Shoot</h3>
+<p>Indoor & outdoor baby photography with beautiful themes.</p>
+</div>
+
+<div class="service-card">
+<div class="icon">💑</div>
+<h3>Pre-Wedding</h3>
+<p>Creative outdoor photoshoots for couples.</p>
+</div>
+
+<div class="service-card">
+<div class="icon">🎂</div>
+<h3>Birthday Events</h3>
+<p>Capture every joyful celebration.</p>
+</div>
+
+<div class="service-card">
+<div class="icon">🏢</div>
+<h3>Corporate Events</h3>
+<p>Professional photography for meetings and conferences.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= GALLERY ================= -->
+
+<section id="gallery">
+
+<h2 class="title">Portfolio</h2>
+
+<div class="gallery">
+
+<img src="images/photo1.jpg" alt="">
+<img src="images/photo2.jpg" alt="">
+<img src="images/photo3.jpg" alt="">
+<img src="images/photo4.jpg" alt="">
+<img src="images/photo5.jpg" alt="">
+<img src="images/photo6.jpg" alt="">
+
+</div>
+
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+
+<section>
+
+<h2 class="title">What Our Clients Say</h2>
+
+<div class="testimonials">
+
+<div class="testimonial">
+⭐⭐⭐⭐⭐
+<p>
+"Our wedding album was beyond our expectations.
+Amazing photography and editing."
+</p>
+<h4>- Arjun & Priya</h4>
+</div>
+
+<div class="testimonial">
+⭐⭐⭐⭐⭐
+<p>
+"The team was very professional and friendly.
+Highly recommended!"
+</p>
+<h4>- Karthik</h4>
+</div>
+
+<div class="testimonial">
+⭐⭐⭐⭐⭐
+<p>
+"Beautiful baby shoot. We loved every picture."
+</p>
+<h4>- Divya</h4>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+<h2 class="title">Contact Us</h2>
+
+<div class="contact-box">
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Email">
+
+<input type="tel" placeholder="Phone Number">
+
+<textarea rows="6" placeholder="Tell us about your event"></textarea>
+
+<button type="submit">Send Enquiry</button>
+
+</form>
+
+<div class="contact-details">
+
+<h3>SB Digital Studio</h3>
+
+<p>📍 Coimbatore, Tamil Nadu</p>
+
+<p>📞 +91 XXXXXXXXXX</p>
+
+<p>✉ yourmail@gmail.com</p>
+
+<p>📷 Instagram : @sbdigitalstudio</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>SB Digital Studio</h2>
+
+<p>Capturing Moments • Creating Memories</p>
+
+<p style="margin-top:20px;">
+© 2026 SB Digital Studio. All Rights Reserved.
+</p>
+
+</footer>
+  <!-- WhatsApp Button -->
+<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp" target="_blank">
+💬
+</a>
+
+<!-- Back To Top -->
+<button id="topBtn">↑</button>
+
+<script>
+
+// Hero Slider
+const slides=document.querySelectorAll(".slide");
+
+let current=0;
+
+function changeSlide(){
+
+slides[current].classList.remove("active");
+
+current++;
+
+if(current>=slides.length){
+current=0;
+}
+
+slides[current].classList.add("active");
+
+}
+
+setInterval(changeSlide,4000);
+
+
+// Scroll Reveal
+
+const reveals=document.querySelectorAll("section");
+
+function reveal(){
+
+for(let i=0;i<reveals.length;i++){
+
+let windowHeight=window.innerHeight;
+
+let top=reveals[i].getBoundingClientRect().top;
+
+if(top<windowHeight-100){
+
+reveals[i].classList.add("show");
+
+}
+
+}
+
+}
+
+window.addEventListener("scroll",reveal);
+
+reveal();
+
+
+// Back To Top
+
+const topBtn=document.getElementById("topBtn");
+
+window.onscroll=function(){
+
+if(document.documentElement.scrollTop>300){
+
+topBtn.style.display="block";
+
+}else{
+
+topBtn.style.display="none";
+
+}
+
+}
+
+topBtn.onclick=function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+};
+
+
+// Active Navigation
+
+const sections=document.querySelectorAll("section");
+
+const navLinks=document.querySelectorAll("nav a");
+
+window.addEventListener("scroll",()=>{
+
+let currentSection="";
+
+sections.forEach(section=>{
+
+const sectionTop=section.offsetTop-120;
+
+if(scrollY>=sectionTop){
+
+currentSection=section.getAttribute("id");
+
+}
+
+});
+
+navLinks.forEach(link=>{
+
+link.classList.remove("active");
+
+if(link.getAttribute("href")==="#"+currentSection){
+
+link.classList.add("active");
+
+}
+
+});
+
+});
+
+
+// Mobile Menu
+
+const nav=document.querySelector("nav");
+
+const menu=document.createElement("div");
+
+menu.innerHTML="☰";
+
+menu.className="menu";
+
+document.querySelector("header").appendChild(menu);
+
+menu.onclick=function(){
+
+nav.classList.toggle("open");
+
+}
+
+</script>
 
 </body>
 </html>
